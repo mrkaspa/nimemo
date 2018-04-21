@@ -9,5 +9,5 @@ proc count(s: seq[int]): int =
 for n in @[1,2,3,4]:
     echo n
 
-echo "SUM = " & intToStr(sum(100, 2))
-echo "LEN = " & intToStr(@[1, 2, 3, 4].count())
+echo "SUM = " & sum(100, 2).intToStr()
+echo "LEN = " & @[1, 2, 3, 4].count().intToStr()
