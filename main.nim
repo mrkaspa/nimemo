@@ -1,4 +1,4 @@
-import strutils
+from strutils import intToStr
 
 proc sum(a, b : int): int =
     return a + b
@@ -7,7 +7,7 @@ proc count(s: seq[int]): int =
     return len(s)
 
 if isMainModule:
-    for n in @[1,2,3,4]:
+    for n in @[1, 2, 3, 4]:
         let str =
             if n mod 2 == 0:
                 "even"
