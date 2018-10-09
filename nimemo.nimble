@@ -8,5 +8,5 @@ srcDir = "src"
 
 # Dependencies
 
-requires "nim >= 0.18.0"
-requires "gintro >= 0.4.2"
+requires "nim >= 0.19.0"
+requires "gintro >= 0.4.6"
