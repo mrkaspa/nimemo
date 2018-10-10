@@ -16,4 +16,4 @@ proc main(): string =
 if isMainModule:
   routes:
     get "/":
-      resp(main())
+      resp main()
