@@ -9,4 +9,4 @@ srcDir = "src"
 # Dependencies
 
 requires "nim >= 0.19.0"
-requires "gintro >= 0.4.6"
+requires "jester >= 0.4.1"

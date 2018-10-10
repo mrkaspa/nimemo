@@ -1,18 +1,19 @@
 from strutils import intToStr
-import nimemopkg/[funcs, gui]
+import jester
+import nimemopkg/funcs
 
-proc main() =
-  for n in @[1, 2, 3, 4]:
+proc main(): string =
+  let nums = @[1, 2, 3, 4]
+  for n in nums :
     let str =
       if n mod 2 == 0:
         "even"
       else:
         "odd"
     echo str
-
-  echo "SUM = " & sum(100, 2).intToStr()
-  echo "LEN = " & @[1, 2, 3, 4].count().intToStr()
+  "SUM = " & sum(100, 2).intToStr() & " - LEN = " & nums.count().intToStr()
 
 if isMainModule:
-  main()
-  mainUI()
+  routes:
+    get "/":
+      resp(main())
